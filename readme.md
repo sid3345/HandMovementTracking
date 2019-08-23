@@ -37,4 +37,4 @@ Then run the code, type `python live webcam network streaming hand tracking.py` 
 python live webcam network streaming hand tracking.py
 ```
 
-Run `python live webcam network streaming hand tracking.py` for hand movement tracking on local system.
+Alternatively, run `python live webcam network streaming hand tracking.py` for hand movement tracking on local system.
