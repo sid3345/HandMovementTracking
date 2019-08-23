@@ -26,7 +26,7 @@ Go to `https://agora-source.netlify.com/`
 
 Paste the app id: 49c2343ef91c4517a6c6a93a445e0a43 (its mentioned in `client=AgoraRTC.create_watcher("49c2343ef91c4517a6c6a93a445e0a43", str(c_path))`). 
 
-Add channel as "gesture" `client.join_channel("gesture")`. 
+Add channel as "gesture" (mentioned in`client.join_channel("gesture")`). 
 
 You can change id and gesture as per your need. But remember to enter same in the browser (client side).
 
