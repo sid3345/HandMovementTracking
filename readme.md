@@ -1,8 +1,4 @@
-## Hand Movement Tracking [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/HandMovementTracking/blob/master/LICENSE.txt)  [![](https://img.shields.io/badge/Akshay-Bahadur-brightgreen.svg?colorB=ff0000)](https://akshaybahadur.com)
-This code helps you to understand and track your hand movement using webcam.
-
-### Sourcerer
-[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/0)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/0)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/1)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/1)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/2)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/2)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/3)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/3)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/4)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/4)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/5)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/5)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/6)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/6)[![](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/images/7)](https://sourcerer.io/fame/akshaybahadur21/akshaybahadur21/HandMovementTracking/links/7)
+## Hand Movement Tracking
 
 ### Code Requirements
 The example code is in Python ([version 2.7](https://www.python.org/download/releases/2.7/) or higher will work). 
@@ -15,17 +11,27 @@ To perform video tracking an algorithm analyzes sequential video frames and outp
 
 Video tracking is the process of locating a moving object (or multiple objects) over time using a camera. It has a variety of uses, some of which are: human-computer interaction, security and surveillance, video communication and compression, augmented reality, traffic control, medical imaging and video editing.
 
+The video is live streamed from Agora.io's RTC. Currently the live stream is done only from client to server. Streaming back from server to client is remaining.
 
 For more information, [see](http://opencv-python-tutroals.readthedocs.io/en/latest/)
 
 ### Working Example
 
-<img src="https://github.com/akshaybahadur21/HandMovementTracking/blob/master/write.gif">
+<img src="Hand tracking agora streaming.flv">
 
 
 
 ### Execution
-To run the code, type `python Write.py`
+Go to https://agora-source.netlify.com/. 
+
+Paste the app id: 49c2343ef91c4517a6c6a93a445e0a43 (its mentioned in "client=AgoraRTC.create_watcher("49c2343ef91c4517a6c6a93a445e0a43", str(c_path))"). 
+
+Add channel as "gesture" ("client.join_channel("gesture")"). 
+
+You can change id and gesture as per your need. But remember to enter same in the browser (client side).
+
+
+Then run the code, type `python Write.py`
 
 ```
 python Write.py
