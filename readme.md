@@ -31,8 +31,10 @@ Add channel as "gesture" ("client.join_channel("gesture")").
 You can change id and gesture as per your need. But remember to enter same in the browser (client side).
 
 
-Then run the code, type `python Write.py`
+Then run the code, type `python live webcam network streaming hand tracking.py` for agora live webcam streaming hand movement tracking 
 
 ```
-python Write.py
+python live webcam network streaming hand tracking.py
 ```
+
+Run 'python live webcam network streaming hand tracking.py' for hand movement tracking on local system.
